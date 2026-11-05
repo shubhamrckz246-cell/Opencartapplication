@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Registration Cross Browser]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Chrome(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC_002AccountRegisteration">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Homepagetest"/>
+          <include name="browserlaunch"/>
+        </methods>
+      </class> <!-- testCases.TC_002AccountRegisteration -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test thread-count="3" parallel="tests" name="Edge(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testCases.TC_002AccountRegisteration">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Homepagetest"/>
+          <include name="browserlaunch"/>
+        </methods>
+      </class> <!-- testCases.TC_002AccountRegisteration -->
+    </classes>
+  </test> <!-- Edge(failed) -->
+  <test thread-count="3" parallel="tests" name="Firefox(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testCases.TC_002AccountRegisteration">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Homepagetest"/>
+          <include name="browserlaunch"/>
+        </methods>
+      </class> <!-- testCases.TC_002AccountRegisteration -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+</suite> <!-- Failed suite [Registration Cross Browser] -->
